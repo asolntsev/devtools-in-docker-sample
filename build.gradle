@@ -13,6 +13,8 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation "org.seleniumhq.selenium:selenium-java:4.9.0"
+    testImplementation 'org.testcontainers:selenium:1.18.0'
+    testImplementation 'org.testcontainers:junit-jupiter:1.18.0'
     testImplementation 'org.slf4j:slf4j-api:2.0.7'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.7'
 }
