@@ -4,6 +4,14 @@
 
 ## How to run tests
 
+Before running this test, execute from command line:
+> docker run -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chromium
+
+or on Mac M1:
+> docker run -p 4444:4444 -p 7900:7900 --shm-size="2g" seleniarm/standalone-chromium
+
+Then run the test:
+
 > ./gradlew test
 
 
@@ -33,3 +41,9 @@ Driver info: driver.version: unknown
 	at app//org.selenide.BrowserInDockerTest.getDevTools(BrowserInDockerTest.java:32)
 	at app//org.selenide.BrowserInDockerTest.connectToBrowserInDocker(BrowserInDockerTest.java:25)
 ```
+
+
+
+## References
+
+* https://github.com/SeleniumHQ/docker-selenium
