@@ -40,7 +40,7 @@ public class BrowserInTestContainersTest {
   }
 
   /**
-   * This is a workaround for a bug in Selenium. 
+   * This is a workaround for an issue with different ports.
    * When Grid is running in Docker on port 4444, it's bound to some random port on host machine (say, 63647).
    * 
    * On startup, ChromeDriver gets capability "se:cdp"="ws://localhost:4444/session/11cf1e54378f5491ed8cdc552ec8c99c/se/cdp".
